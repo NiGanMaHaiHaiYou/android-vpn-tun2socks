@@ -27,7 +27,7 @@ jobs:
       
     - name: Find APKs
       run: |
-        echo "APK_FILE_CANARY=$(find app/build/outputs/apk/canary -name '*.apk')" >> $GITHUB_ENV
+        cd /home/runner/work/ && tree
 
     - name: Upload Canary APK
       uses: actions/upload-artifact@v3
